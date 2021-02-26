@@ -86,7 +86,7 @@ const questions = [
 function init() {
     inquirer.prompt( [...questions])
     .then ((answers) => {
-        fs.writeFileSync('README.md', gm(answers));
+        fs.writeFileSync('SAMPLEREADME.md', gm(answers));
         console.log("README file succesfully created!");
     })
     .catch((err) => {

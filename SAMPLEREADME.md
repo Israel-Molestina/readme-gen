@@ -23,7 +23,7 @@ README Generator is a command-line application that will dynamically generate a 
 
 ## Installation
 
-To install the required dependancies, please run the following command:
+To install the required dependencies, please run the following command:
 
 ```
 npm i inquirer 
@@ -51,4 +51,4 @@ npm test
 
 ## Questions
 
-If you have any questions contact me at molestinaisrael@gmail.com. You can find more of my work at [Israel-Molestina](https://github.com/Israel-Molestina)
+If you have any questions, contact me at molestinaisrael@gmail.com. You can find more of my work at [Israel-Molestina](https://github.com/Israel-Molestina)

@@ -1,11 +1,11 @@
 
-# readme project 
+# README generator 
 
-![GitHub license](https://img.shields.io/badge/License-GPL3.0-red)
+![GitHub license](https://img.shields.io/badge/License-MIT-green)
 
 ## Description
 
-creates readme based on promtp
+README Generator is a command-line application that will dynamically generate a polished and professional README.md file from a user's input. The generator will use the Inquirer package.
 
 ## Table of Contents
 
@@ -26,20 +26,20 @@ creates readme based on promtp
 To install the required dependancies, please run the following command:
 
 ```
-npm i 
+npm i inquirer 
 ```
 
 ## Usage
 
-run inqurere 
+Have node.js installed. Run command npm init -y to install package.json file. Install inquirer dependency using command npm i inquirer. Run command node index.js. 
 
 ## License 
 
-This project is licensed under the [GPL 3.0](https://spdx.org/licenses/GPL-3.0-or-later.html) license.
+This project is licensed under the [MIT](https://spdx.org/licenses/MIT.html) license.
 
 ## Contributing
 
-git
+Abide by the Contributor covenant guidelines
 
 ## Tests
 
@@ -49,6 +49,8 @@ To run tests, please run the following command:
 npm test
 ```
 
+## Screenshots
+
 ## Questions
 
-If you have any questions conatact me at molestiaisrael@gmail.com. You can find more of my work at [Israel-Molestina](https://github.com/Israel-Molestina)
+If you have any questions contact me at molestinaisrael@gmail.com. You can find more of my work at [Israel-Molestina](https://github.com/Israel-Molestina)

@@ -25,7 +25,7 @@ const questions = [
      type: 'input',
      message: "What commands need to be run to install dependencies?",
      name: 'install',
-     default: "npm i",
+     default: "npm i inquirer",
      validate: function validateInstall(install){
         return install !== '';
      },

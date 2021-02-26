@@ -1,11 +1,11 @@
 
-# README.md Gen 
+# README generator 
 
 ![GitHub license](https://img.shields.io/badge/License-MIT-green)
 
 ## Description
 
-Program using node.js and inquirer to take in input from user and creatre a readme
+README Generator is a command-line application that will dynamically generate a polished and professional README.md file from a user's input. The generator will use the Inquirer package.
 
 ## Table of Contents
 
@@ -26,12 +26,12 @@ Program using node.js and inquirer to take in input from user and creatre a read
 To install the required dependancies, please run the following command:
 
 ```
-npm i 
+npm i inquirer 
 ```
 
 ## Usage
 
-install npm inquirer and have node.js installed 
+Have node.js installed. Run command npm init -y to install package.json file. Install inquirer dependency using command npm i inquirer. Run command node index.js. 
 
 ## License 
 
@@ -39,7 +39,7 @@ This project is licensed under the [MIT](https://spdx.org/licenses/MIT.html) lic
 
 ## Contributing
 
-git
+Abide by the Contributor covenant guidelines
 
 ## Tests
 
@@ -51,4 +51,4 @@ npm test
 
 ## Questions
 
-If you have any questions conatact me at molestinaisrael@gmail.com. You can find more of my work at [Israel-Molestina](https://github.com/Israel-Molestina)
+If you have any questions contact me at molestinaisrael@gmail.com. You can find more of my work at [Israel-Molestina](https://github.com/Israel-Molestina)

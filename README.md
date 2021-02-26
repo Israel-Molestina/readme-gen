@@ -35,7 +35,7 @@ npm i inquirer
 
 ## Usage
 
-In order to run and use the application you will need to have node.js installed. Then run the command node index.js to start the application. You will be presented with various prompts asking about your project. Once all prompts are answered the application will generate a README.md file for you. The file will have a functional table of contents, a badge and link to the license you chose, your email and your GitHub link. Below is a link to a walkthrough video. 
+In order to run and use the application you will need to have node.js installed. Then run the command node index.js to start the application. You will be presented with various prompts asking about your project. Once all prompts are answered the application will generate a README.md file for you. The file will have a functional table of contents, a badge and link to the license you chose, your email and your GitHub link. The file called SAMPLEREADME.md was generated using this application. Below is a link to a walkthrough video. 
 
 [Walkthrough](https://drive.google.com/file/d/16rTXWgx852hYfDhQlso8UkQjWZ1scvDg/view)
 

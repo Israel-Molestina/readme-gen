@@ -3,6 +3,10 @@
 
 ![GitHub license](https://img.shields.io/badge/License-MIT-green)
 
+## User Story
+
+AS A developer I WANT a README generator SO THAT I can quickly create a professional README for a new project.
+
 ## Description
 
 README Generator is a command-line application that will dynamically generate a polished and professional README.md file from a user's input. The generator will use the Inquirer package.
@@ -31,7 +35,9 @@ npm i inquirer
 
 ## Usage
 
-Have node.js installed. Run command npm init -y to install package.json file. Install inquirer dependency using command npm i inquirer. Run command node index.js. 
+In order to run and use the application you will need to have node.js installed. Then run the command node index.js to start the application. You will be presented with various prompts asking about your project. Once all prompts are answered the application will generate a README.md file for you. The file will have a functional table of contents, a badge and link to the license you chose, your email and your GitHub link. Below is a link to a walkthrough video. 
+
+[Walkthrough](https://drive.google.com/file/d/16rTXWgx852hYfDhQlso8UkQjWZ1scvDg/view)
 
 ## License 
 
@@ -50,6 +56,12 @@ npm test
 ```
 
 ## Screenshots
+
+### Command-Line Prompts
+
+![Command-Line-Screenshot](pics/readme-gen-prompt.png)
+
+### 
 
 ## Questions
 

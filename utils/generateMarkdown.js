@@ -1,84 +1,71 @@
 // function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(data) {
-    let badge;
+function renderLicenseBadge(license) {
 
-    switch(data.license) {
+    switch(license) {
         case 'MIT': 
-            badge = "https://img.shields.io/badge/license-MIT-green";
-            break;
+            return "\n\n![GitHub license](https://img.shields.io/badge/License-MIT-green)";
         
         case 'APACHE 2.0': 
-            badge = "https://img.shields.io/badge/license-APACHE2.0-blule";
-            break;
+            return "\n\n![GitHub license](https://img.shields.io/badge/License-APACHE2.0-blule)";
 
         case 'GPL 3.0': 
-            badge = "https://img.shields.io/badge/license-GPL3.0-red";
-            break;
+            return "\n\n![GitHub license](https://img.shields.io/badge/License-GPL3.0-red)";
 
         case 'BSD 3': 
-            badge = "https://img.shields.io/badge/license-BSD3-orange";
-            break;
+            return "\n\n![GitHub license](https://img.shields.io/badge/License-BSD3-orange)";
 
         case 'None': 
-            badge = '';
-            break;
+            return '';
 
     }
 };
 
 // function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(data) {
-    let link;
+function renderLicenseLink(license) {
 
-    switch(data.license) {
+    switch(license) {
         case 'MIT': 
-            link = "https://spdx.org/licenses/MIT.html";
-            break;
+            return "[MIT](https://spdx.org/licenses/MIT.html)";
         
         case 'APACHE 2.0': 
-            link = "https://spdx.org/licenses/Apache-2.0.html";
-            break;
-
+            return "[APACHE 2.0](https://spdx.org/licenses/Apache-2.0.html)";
+            
         case 'GPL 3.0': 
-            link = "https://spdx.org/licenses/GPL-3.0-or-later.html"
-            ;
-            break;
+            return "[GPL 3.0](https://spdx.org/licenses/GPL-3.0-or-later.html)";
 
         case 'BSD 3': 
-            link = "https://spdx.org/licenses/BSD-3-Clause.html";
-            break;
-
+            return "[BSD 3](https://spdx.org/licenses/BSD-3-Clause.html)";
+            
         case 'None': 
-            link = '';
-            break;
+            return '';
+            
 
     }
 }
 
 // function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(data) {}
+function renderLicenseSection(license) {
+
+    return `\n\n## License \n\nThis project is licensed under the ${renderLicenseLink(license)} license.`
+}
 
 // function to generate markdown for README
-function generateMarkdown (data) {
+function generateMarkdown (userAnswers) {
     return `
-# ${data.title}
-
-![GitHub license](${renderLicenseBadge.badge})
+# ${userAnswers.title} ${userAnswers.license === 'None' ? "" : renderLicenseBadge(userAnswers.license)}
 
 ## Description
 
-${data.description}
+${userAnswers.description}
 
 ## Table of Contents
 
 * [Installation](#Installation)
 
-* [Usage](#Usage)
-
-* [License](#License)
+* [Usage](#Usage) ${userAnswers.license === 'None' ? "" : " \n\n* [License](#License)"}
 
 * [Contributing](#Contributing)
 
@@ -91,32 +78,28 @@ ${data.description}
 To install the required dependancies, please run the following command:
 
 \`\`\`
-${data.install} 
+${userAnswers.install} 
 \`\`\`
 
 ## Usage
 
-${data.usage}
-
-## License
-
-This project is licensed under the ${data.license} license.
+${userAnswers.usage} ${userAnswers.license === 'None' ? "" : renderLicenseSection(userAnswers.license)}
 
 ## Contributing
 
-${data.contribute}
+${userAnswers.contribute}
 
 ## Tests
 
 To run tests, please run the following command:
 
 \`\`\`
-${data.test}
+${userAnswers.test}
 \`\`\`
 
 ## Questions
 
-If you have any questions conatact me at ${data.email}. You can find more of my work at [${data.github}](https://github.com/${data.github})
+If you have any questions conatact me at ${userAnswers.email}. You can find more of my work at [${userAnswers.github}](https://github.com/${userAnswers.github})
 `
 };
 

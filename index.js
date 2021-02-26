@@ -85,8 +85,8 @@ const questions = [
 // function to initialize app
 function init() {
     inquirer.prompt( [...questions])
-    .then ((data) => {
-        fs.writeFileSync('README.md', gm(data));
+    .then ((answers) => {
+        fs.writeFileSync('README.md', gm(answers));
         console.log("README file succesfully created!");
     })
     .catch((err) => {

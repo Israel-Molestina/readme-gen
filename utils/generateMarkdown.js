@@ -99,7 +99,7 @@ ${userAnswers.test}
 
 ## Questions
 
-If you have any questions, conatact me at ${userAnswers.email}. You can find more of my work at [${userAnswers.github}](https://github.com/${userAnswers.github})
+If you have any questions, contact me at ${userAnswers.email}. You can find more of my work at [${userAnswers.github}](https://github.com/${userAnswers.github})
 `
 };
 
